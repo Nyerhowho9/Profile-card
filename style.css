@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dgrey: hsl(0, 0%, 12%);
+    --oblack: hsl(0, 0%, 8%);
+}
+body{
+    background-color: var(--oblack);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+}
+
+.main-container{
+    background-color: var(--dgrey);
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+
+
+}
+header{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.name{
+    color: var(--white);
+    margin-top: 20px;
+    font-size: 24px;
+}
+.email{
+    color: var(--green);
+    margin-top: 15px;
+    font-size: 14px;
+
+}
+.job{
+    color: var(--green);
+    margin-top: 15px;
+    font-size: 14px;
+}
+main{
+    color: var(--white);
+    width: 90%;
+    background-color: var(--grey);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 23px;
+    text-align: center;
+
+
+}
+.goals-heading{
+    font-size: 18px;
+    padding-top: 20px;
+    
+}
+.goals{
+    font-size: 14px;
+    width: 85%;
+    margin: auto;
+    padding-top: 20px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+a{
+    text-decoration: none;
+    color: var(--green);
+}
+footer{
+    width: 90%;
+    background-color: var(--grey);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    padding-top: 20px;
+
+}
+.date{
+    color: var(--green);
+
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+ 
+    .main-container{
+        width: 50%;
+    }
+    header{
+        padding-top: 50px;
+    }
+    .email{
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+ 
+    .main-container{
+        width: 40%;
+    }
+    header{
+        padding-top: 50px;
+    }
+    .name{
+        font-size: 26px;
+
+    }
+    .email{
+        font-size: 16px;
+    }
+    .goals{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Nyerhowho</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <img src="./N" alt="Selfie of nyehrowho9" data-testid="profilePicture" class="img">
+            <h1 data-testid="fullName" class="name">NEYRHOWHO AVBENAGHA</h1>
+            <p data-testid="emailAddress" class="email">Nyerhowho9@gmail.com</p>
+            <p data-testid="jobTitle" class="job">Software Engineer</p>
+        </header>
+        <main>
+            <h2 class="goals-heading">My Goals </h2>
+            <p class="goals">
+                In two years, I expect that I would have grown from my curent path as a frontend developer 
+                <a href="http://hng.tech/learn" data-testid="hngLink">intern with HNG</a> to be a full stack developer. 
+                I see myself being more proficient in React and backend technologies like Python and Java.
+                <br>  
+                <br>              
+                I intend to tackle challenging projects,
+                while also refining my problem-solving abilities and collaborative skills. 
+                I aim to expand my portfolio, achieve certifications and get recognition within the developer community
+                <br>
+                <br>
+                I would venture into AI, as it is an interesting and promising field. I want to build AI poducts like:
+                <a href="http://keyword.dog/" data-testid="keywordLink">keyword.dog</a> and 
+                <a href="http://scrapeanyweb.site/" data-testid="scrapeanywebLink">Scrape Any Website</a>.
+                <br>
+                <br>
+                I would secure a full-time position as a software engineer, 
+                in a dynamic and innovative company that aligns with my carrer goals.
+
+
+            </p>
+            
+        </main>
+        <footer>
+            <p data-testid="currentDay" id="day" class="date">Day : </p>
+            <p data-testid="currentTimeUTC" id="time" class="date">Time: </p>
+        </footer>
+    </div>
+
+    <script>
+        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+        const d = new Date();
+        let day = weekday[d.getDay()];
+        document.getElementById("day").innerHTML = day;  
+
+        let curentTime = () => {
+            let hour = d.getUTCHours();
+            let mins = d.getUTCMinutes();
+            let sec = d.getUTCSeconds();
+
+            let time = `${hour}:${mins}:${sec}`;
+
+            return time;
+        }
+        document.getElementById("time").innerHTML = curentTime();
+
+        
+    </script>
+</body>
+</html>
