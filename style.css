@@ -36,11 +36,15 @@ header{
     padding-top: 30px;
 
 }
+.img{
+    border-radius: 50%;
+}
 .name{
     color: var(--white);
     margin-top: 20px;
     font-size: 24px;
 }
+
 .email{
     color: var(--green);
     margin-top: 15px;
@@ -63,12 +67,12 @@ main{
 
 
 }
-.goals-heading{
+.bio-heading{
     font-size: 18px;
     padding-top: 20px;
     
 }
-.goals{
+.bio{
     font-size: 14px;
     width: 85%;
     margin: auto;
