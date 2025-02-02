@@ -8,6 +8,8 @@
     --grey: hsl(0, 0%, 20%);
     --dgrey: hsl(0, 0%, 12%);
     --oblack: hsl(0, 0%, 8%);
+    --orange: hsl(42, 91%, 56%);
+
 }
 body{
     background-color: var(--oblack);
@@ -56,6 +58,18 @@ header{
     margin-top: 15px;
     font-size: 14px;
 }
+.socials{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 15px;
+
+}
 main{
     color: var(--white);
     width: 90%;
@@ -70,6 +84,7 @@ main{
 .bio-heading{
     font-size: 18px;
     padding-top: 20px;
+    color: var(--green);
     
 }
 .bio{
@@ -80,10 +95,11 @@ main{
     text-align: justify;
     padding-bottom: 30px;
 }
-a{
-    text-decoration: none;
+
+span{
     color: var(--green);
 }
+
 footer{
     width: 90%;
     background-color: var(--grey);
@@ -113,6 +129,13 @@ footer{
     .email{
         font-size: 16px;
     }
+    .job{
+        font-size: 16px;
+
+    }
+    a{
+        font-size: 16px;
+    }
 }
 
 
@@ -131,7 +154,11 @@ footer{
     .email{
         font-size: 16px;
     }
-    .goals{
+    .job{
+        font-size: 16px;
+
+    }
+    a{
         font-size: 16px;
     }
 }
